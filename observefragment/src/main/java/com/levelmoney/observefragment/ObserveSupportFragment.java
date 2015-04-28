@@ -19,7 +19,7 @@ import java.util.Set;
  *
  * Fragment with Lifecycle hooks.
  */
-public class ObserveSupportFragment extends Fragment {
+public class ObserveSupportFragment extends Fragment implements IObserveFragment {
     private static final String TAG = ObserveSupportFragment.class.getSimpleName();
 
     private final Set<FragmentObserver> mObservers = new LinkedHashSet<>();
@@ -32,10 +32,12 @@ public class ObserveSupportFragment extends Fragment {
         mObservers.addAll(observers);
     }
 
+    @Override
     public void addObserver(FragmentObserver observer) {
         mObservers.add(observer);
     }
 
+    @Override
     public void removeObserver(FragmentObserver observer) {
         mObservers.remove(observer);
     }
