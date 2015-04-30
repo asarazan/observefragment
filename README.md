@@ -8,7 +8,7 @@ Simply adding Observer support to fragments enables us to cleanly compartmentali
 Expect to see these classes used and supported in numerous Level open source projects to come.
 
 # Install
-We have started using [http://jitpack.io/](Jitpack) for all of our open source libraries, so add the following to your app's build.gradle file:
+We have started using [Jitpack](http://jitpack.io) for all of our open source libraries, so add the following to your app's build.gradle file:
 
 ```groovy
 repositories {
