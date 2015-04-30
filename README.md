@@ -16,6 +16,6 @@ repositories {
 }
 
 dependencies {
-  compile 'com.github.Levelmoney:ObserveFragment:0.5' // or whatever the latest version is.
+  compile 'com.github.Levelmoney:ObserveFragment:1.0.01' // or whatever the latest version is.
 }
 ```
