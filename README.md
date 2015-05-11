@@ -12,6 +12,6 @@ Expect to see these classes used in numerous Level open source projects to come.
 
 ```gradle
 dependencies {
-  compile 'com.levelmoney.observefragment:observefragment:1.0-SNAPSHOT@aar'
+  compile 'com.levelmoney.observefragment:observefragment:1.0@aar'
 }
 ```
