@@ -38,7 +38,6 @@ public class ObserveSupportFragment extends Fragment implements IObserveFragment
 
     @SuppressLint("ValidFragment")
     protected ObserveSupportFragment(Set<FragmentObserver> observers) {
-        this();
         mObservers.addAll(observers);
     }
 
