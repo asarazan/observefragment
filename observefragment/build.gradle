@@ -47,5 +47,5 @@ dependencies {
     compile 'com.android.support:appcompat-v7:22.2.0'
 }
 
-//apply from: 'https://raw.githubusercontent.com/levelmoney/JCenter/master/installv1.gradle'
-//apply from: 'https://raw.githubusercontent.com/levelmoney/JCenter/master/bintrayv1.gradle'
+apply from: 'https://raw.githubusercontent.com/levelmoney/JCenter/master/installv1.gradle'
+apply from: 'https://raw.githubusercontent.com/levelmoney/JCenter/master/bintrayv1.gradle'
