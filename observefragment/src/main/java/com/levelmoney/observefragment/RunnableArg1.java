@@ -16,6 +16,6 @@
 
 package com.levelmoney.observefragment;
 
-interface RunnableArg1<T> {
+public interface RunnableArg1<T> {
     void run(T t);
 }

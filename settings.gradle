@@ -1,1 +1,2 @@
 include ':observefragment'
+rootProject.name = 'parent'
