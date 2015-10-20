@@ -50,6 +50,10 @@ public abstract class ActivityObserver {
     public void onDestroy() {
     }
 
+    public boolean onBackPressed() {
+        return false;
+    }
+
     public void onCreateOptionsMenu(Menu menu) {
     }
 

@@ -33,6 +33,7 @@ public interface IObserveActivity {
     void onPause();
     void onStop();
     void onDestroy();
+    void onBackPressed();
     boolean onCreateOptionsMenu(final Menu menu);
     boolean onOptionsItemSelected(final MenuItem item);
 }

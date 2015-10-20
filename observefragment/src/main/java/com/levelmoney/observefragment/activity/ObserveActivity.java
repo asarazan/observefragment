@@ -150,6 +150,22 @@ public class ObserveActivity extends Activity implements IObserveActivity {
     }
 
     @Override
+    public void onBackPressed() {
+        final boolean[] handled = { false };
+        foreach(new RunnableArg1<ActivityObserver>() {
+            @Override
+            public void run(ActivityObserver input) {
+                if (!handled[0] && input.onBackPressed()) {
+                    handled[0] = true;
+                }
+            }
+        });
+        if (!handled[0]) {
+            super.onBackPressed();
+        }
+    }
+
+    @Override
     public boolean onCreateOptionsMenu(final Menu menu) {
         boolean retval = super.onCreateOptionsMenu(menu);
         foreach(new RunnableArg1<ActivityObserver>() {
