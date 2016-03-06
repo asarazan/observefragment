@@ -20,6 +20,7 @@ import android.content.Intent;
 import android.os.Bundle;
 import android.view.Menu;
 import android.view.MenuItem;
+import android.view.MotionEvent;
 
 public abstract class ActivityObserver {
 
@@ -58,5 +59,9 @@ public abstract class ActivityObserver {
     }
 
     public void onOptionsItemSelected(MenuItem item) {
+    }
+
+    public boolean dispatchTouchEvent(MotionEvent ev) {
+        return false;
     }
 }

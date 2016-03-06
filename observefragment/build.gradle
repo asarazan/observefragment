@@ -15,7 +15,7 @@ ext {
     gitUrl = 'https://github.com/levelmoney/observefragment.git'
     issueUrl = 'https://github.com/Levelmoney/observefragment/issues'
 
-    libraryVersion = '1.6'
+    libraryVersion = '1.7'
 
     developerId = 'levelmoney'
     developerName = 'Aaron Sarazan'

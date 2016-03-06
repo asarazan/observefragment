@@ -22,6 +22,7 @@ import android.content.Intent;
 import android.os.Bundle;
 import android.view.Menu;
 import android.view.MenuItem;
+import android.view.MotionEvent;
 
 import com.levelmoney.observefragment.RunnableArg1;
 
@@ -171,6 +172,14 @@ public class ObserveListActivity extends ListActivity implements IObserveActivit
             }
         });
         return retval;
+    }
+
+    @Override
+    public boolean dispatchTouchEvent(final MotionEvent ev) {
+        for (ActivityObserver observer : mObservers) {
+            if (observer.dispatchTouchEvent(ev)) return true;
+        }
+        return super.dispatchTouchEvent(ev);
     }
 
     private void foreach(RunnableArg1<ActivityObserver> fn) {

@@ -24,7 +24,10 @@ import android.app.Fragment;
 import android.view.Menu;
 import android.view.MenuInflater;
 import android.view.MenuItem;
+import android.view.MotionEvent;
 import android.view.View;
+
+import com.levelmoney.observefragment.activity.ActivityObserver;
 
 import java.util.LinkedHashSet;
 import java.util.Set;

@@ -20,6 +20,7 @@ import android.content.Intent;
 import android.os.Bundle;
 import android.view.Menu;
 import android.view.MenuItem;
+import android.view.MotionEvent;
 
 public interface IObserveActivity {
     void addObserver(ActivityObserver observer);
@@ -36,4 +37,5 @@ public interface IObserveActivity {
     void onBackPressed();
     boolean onCreateOptionsMenu(final Menu menu);
     boolean onOptionsItemSelected(final MenuItem item);
+    boolean dispatchTouchEvent(MotionEvent ev);
 }
