@@ -20,6 +20,7 @@ import android.annotation.SuppressLint;
 import android.app.Activity;
 import android.content.Intent;
 import android.os.Bundle;
+import android.support.annotation.CallSuper;
 import android.view.Menu;
 import android.view.MenuItem;
 import android.view.MotionEvent;
@@ -141,13 +142,25 @@ public class ObserveActivity extends Activity implements IObserveActivity {
 
     @Override
     public void onDestroy() {
-        super.onDestroy();
         foreach(new RunnableArg1<ActivityObserver>() {
             @Override
             public void run(ActivityObserver input) {
                 input.onDestroy();
             }
         });
+        super.onDestroy();
+    }
+
+    @Override
+    @CallSuper
+    public void finish() {
+        foreach(new RunnableArg1<ActivityObserver>() {
+            @Override
+            public void run(ActivityObserver input) {
+                input.onFinish();
+            }
+        });
+        super.finish();
     }
 
     @Override

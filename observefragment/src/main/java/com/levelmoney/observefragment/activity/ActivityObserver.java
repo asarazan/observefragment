@@ -55,6 +55,10 @@ public abstract class ActivityObserver {
         return false;
     }
 
+    public void onFinish() {
+
+    }
+
     public void onCreateOptionsMenu(Menu menu) {
     }
 
