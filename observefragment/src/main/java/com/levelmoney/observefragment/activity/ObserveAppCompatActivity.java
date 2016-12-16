@@ -17,7 +17,6 @@
 package com.levelmoney.observefragment.activity;
 
 import android.annotation.SuppressLint;
-import android.support.annotation.CallSuper;
 import android.support.v7.app.AppCompatActivity;
 import android.content.Intent;
 import android.os.Bundle;
@@ -152,7 +151,6 @@ public class ObserveAppCompatActivity extends AppCompatActivity implements IObse
     }
 
     @Override
-    @CallSuper
     public void finish() {
         foreach(new RunnableArg1<ActivityObserver>() {
             @Override

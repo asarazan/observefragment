@@ -1,39 +1,13 @@
 apply plugin: 'com.android.library'
 
-ext {
-    bintrayRepo = 'maven'
-    bintrayName = 'observefragment'
-    bintrayOrg = 'levelmoney'
-
-    publishedGroupId = 'com.levelmoney.observefragment'
-    libraryName = 'Observe Fragment'
-    artifact = 'observefragment'
-
-    libraryDescription = 'A set of Fragments (& now Activities!) that implement the Observer pattern.'
-
-    siteUrl = 'https://github.com/levelmoney/observefragment'
-    gitUrl = 'https://github.com/levelmoney/observefragment.git'
-    issueUrl = 'https://github.com/Levelmoney/observefragment/issues'
-
-    libraryVersion = '1.8'
-
-    developerId = 'levelmoney'
-    developerName = 'Aaron Sarazan'
-    developerEmail = 'aaron@levelmoney.com'
-
-    licenseName = 'The Apache Software License, Version 2.0'
-    licenseUrl = 'http://www.apache.org/licenses/LICENSE-2.0.txt'
-    allLicenses = ["Apache-2.0"]
-}
-
 android {
-    compileSdkVersion project.sdk_version
-    buildToolsVersion "$build_tools"
+    compileSdkVersion 25
+    buildToolsVersion "25.0.1"
 
 
     defaultConfig {
         minSdkVersion 14
-        targetSdkVersion project.sdk_version
+        targetSdkVersion 25
     }
 
     compileOptions {
@@ -44,9 +18,8 @@ android {
 
 dependencies {
     compile fileTree(dir: 'libs', include: ['*.jar'])
-    compile "com.android.support:support-v4:$support_version"
-    compile "com.android.support:appcompat-v7:$support_version"
+    compile "com.android.support:support-v4:25.0.1"
+    compile "com.android.support:appcompat-v7:25.0.1"
 }
 
-apply from: 'https://raw.githubusercontent.com/levelmoney/JCenter/master/installv1.gradle'
-apply from: 'https://raw.githubusercontent.com/levelmoney/JCenter/master/bintrayv1.gradle'
+apply from: 'https://raw.githubusercontent.com/Levelmoney/grublish/1.0.1/gradle/module.gradle'

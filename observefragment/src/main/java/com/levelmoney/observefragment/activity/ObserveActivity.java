@@ -20,7 +20,6 @@ import android.annotation.SuppressLint;
 import android.app.Activity;
 import android.content.Intent;
 import android.os.Bundle;
-import android.support.annotation.CallSuper;
 import android.view.Menu;
 import android.view.MenuItem;
 import android.view.MotionEvent;
@@ -152,7 +151,6 @@ public class ObserveActivity extends Activity implements IObserveActivity {
     }
 
     @Override
-    @CallSuper
     public void finish() {
         foreach(new RunnableArg1<ActivityObserver>() {
             @Override
